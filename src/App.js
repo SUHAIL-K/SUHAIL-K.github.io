@@ -1,24 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import { Link, animateScroll as scroll } from "react-scroll";
+import Intro from './components/Intro';
+import { Box } from '@chakra-ui/react';
+import AboutMe from './components/AboutMe';
+import Work from './components/Work';
+import TechSkill from './components/TechSkill';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box className="App"
+    backgroundColor={'csdark'}
+    paddingBottom='100px'
+    >
+    <Navbar>
+
+    </Navbar>
+    <Intro></Intro>
+    <AboutMe></AboutMe>
+    <Work></Work>
+    <TechSkill></TechSkill>
+    </Box>
   );
 }
 
